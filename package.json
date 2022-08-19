@@ -4,7 +4,7 @@
   "description": "Presentation tool based on Reveal.js",
   "main": "index.js",
   "scripts": {
-    "dev" : "vite",
+    "dev": "vite",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,7 +18,14 @@
   },
   "homepage": "https://github.com/mklilley/slido#readme",
   "dependencies": {
+    "react": "^18.2.0",
     "reveal.js": "^4.3.1",
-    "vite": "^3.0.9"
+    "react-dom": "^18.2.0"
+  },
+    "devDependencies": {
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.0.1",
+    "vite": "^3.0.7"
   }
 }
