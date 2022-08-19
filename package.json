@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/mklilley/slido/issues"
   },
-  "homepage": "https://github.com/mklilley/slido#readme"
+  "homepage": "https://github.com/mklilley/slido#readme",
+  "dependencies": {
+    "reveal.js": "^4.3.1"
+  }
 }
