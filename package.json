@@ -1,0 +1,19 @@
+{
+  "name": "slido",
+  "version": "1.0.0",
+  "description": "Presentation tool based on Reveal.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mklilley/slido.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mklilley/slido/issues"
+  },
+  "homepage": "https://github.com/mklilley/slido#readme"
+}
