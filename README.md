@@ -16,5 +16,5 @@ Reveal.js can also take markdown and turn it into a web based presentation. To s
 At it's core, slidee turns a folder of markdown files into reveal.js presentations. Try this out:
 - Create a folder called `decks`
 - Create some markdown files ending in `.slides.md`
-- `npm run dev`
+- `npm run serve`
 - Go to [localhost://3000](http://localhost:3000)
