@@ -42,7 +42,7 @@
 <body>
     <div class="reveal">
         <div class="slides">
-            <section id="markdown-slides" data-markdown data-separator-notes="^- Notes:">
+            <section data-markdown data-separator-notes="^- Notes:">
                 <script type="text/template">
                     ## Markdown slides
                     Each slide is separated by --- in code
@@ -119,6 +119,8 @@
     <script>
         let deck = new Reveal({
             plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+            hash: true,
+            hashOneBasedIndex: true,
         });
         deck.initialize();
     </script>

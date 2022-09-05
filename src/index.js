@@ -8,5 +8,7 @@ import "reveal.js/plugin/highlight/monokai.css";
 
 let deck = new Reveal({
     plugins: [Markdown, RevealHighlight, RevealNotes],
+    hash: true,
+    hashOneBasedIndex: true,
 });
 deck.initialize();
