@@ -15,7 +15,7 @@ async function show(req, res) {
     try {
         const deck = await decks.find({ id: req.params.deckId });
         const content = fs.readFileSync(`${deck.path}`, "utf8");
-        res.render("deck", { markdown: content });
+        res.render("deck", { markdown: content, styles:process.env.STYLES });
     } catch (e) {
         res.status(404).json({ error: e.message });
     }
