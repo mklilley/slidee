@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const homeRoute = require("./routes/home");
 const decksRoute = require("./routes/decks");
