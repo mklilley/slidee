@@ -43,7 +43,7 @@
     <div class="reveal">
         <div class="slides">
             <section id="markdown-slides" contenteditable="true" data-markdown data-separator-notes="^- Notes:">
-                <textarea data-template>
+                <script type="text/template">
                     ## Markdown slides
                     Each slide is separated by --- in code
 
@@ -70,10 +70,41 @@
                     ![](https://images.thestar.com/content/dam/thestar/business/2013/09/18/grumpy_cat_rewarded_for_persistent_frowning_gets_endorsement_deal/grumpy_cat.jpg)
 
                     - Notes:
-                    Add some images
+                    Landscape images will fill the slide nicely
+
+                    Can use:
+                    ```
+                    ![](IMAGE_URL)
+                    ```
+
+                    ---
+
+                    Images with text need to be stretched.
+
+                    Reveal has a `r-stretch` class to do this.
+
+                    Needs us to add an image tag to your markdown instead of `![](url)`
+
+                    <img class="r-stretch" src="https://images.thestar.com/content/dam/thestar/business/2013/09/18/grumpy_cat_rewarded_for_persistent_frowning_gets_endorsement_deal/grumpy_cat.jpg">
+
+                    - Notes:
+                    ```
+                    <img class="r-stretch" src="URL_HERE">
+                    ```
+
+                    ---
+
+                    <img class="r-stretch" src="https://mymodernmet.com/wp/wp-content/uploads/2017/09/dog-portraits-alexander-khokhlov-2.jpg">
+
+                    - Notes:
+                     Vertical slides also need to be stretched to fit
+                    ```
+                    <img class="r-stretch" src="URL_HERE">
+                    ```                   
+                    
 
 
-                </textarea>
+                </script>
             </section>
         </div>
     </div>
