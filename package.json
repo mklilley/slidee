@@ -1,23 +1,30 @@
 {
-  "name": "slido",
+  "name": "slidee",
   "version": "1.0.0",
   "description": "Presentation tool based on Reveal.js",
   "main": "index.js",
   "scripts": {
-    "dev" : "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "server": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mklilley/slido.git"
+    "url": "git+https://github.com/mklilley/slidee.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mklilley/slido/issues"
+    "url": "https://github.com/mklilley/slidee/issues"
   },
-  "homepage": "https://github.com/mklilley/slido#readme",
+  "homepage": "https://github.com/mklilley/slidee#readme",
   "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "hbs": "^4.2.0",
+    "nodemon": "^2.0.19",
     "reveal.js": "^4.3.1",
     "vite": "^3.0.9"
   }
