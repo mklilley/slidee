@@ -18,3 +18,5 @@ At its core, slidee turns a folder of markdown files into reveal.js presentation
 - Create some markdown files ending in `.slides.md`
 - `npm run serve`
 - Go to [localhost://3000](http://localhost:3000)
+
+> TODO: Write about how to make a quick slide deck with no notes, how to specify custom slide deck folder, specify custom CSS
