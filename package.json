@@ -4,9 +4,9 @@
   "description": "Presentation tool based on Reveal.js",
   "main": "index.js",
   "scripts": {
-    "reveal": "vite reveal",
-    "build": "vite build",
-    "dev": "nodemon index.js"
+    "dev": "vite src",
+    "build": "vite build src",
+    "serve": "nodemon index.js"
   },
   "repository": {
     "type": "git",
