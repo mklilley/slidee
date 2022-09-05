@@ -4,7 +4,7 @@
   "description": "Presentation tool based on Reveal.js",
   "main": "index.js",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite src",
     "build": "vite build",
     "server": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
