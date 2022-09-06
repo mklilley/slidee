@@ -1,6 +1,8 @@
 # Slidee
 Presentation tool powered by [Reveal.js](https://revealjs.com/)
 
+WON'T CURRENTLY WORK ON WINDOWS
+
 ## How to use this Repo
 - Clone the repo
 - Run `npm install`
