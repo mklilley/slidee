@@ -1,6 +1,6 @@
 {
   "name": "slidee",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Presentation tool based on Reveal.js",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,7 @@
     "type": "git",
     "url": "git+https://github.com/mklilley/slidee.git"
   },
-  "author": "",
+  "author": "Matt Lilley",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/mklilley/slidee/issues"
