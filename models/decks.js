@@ -1,16 +1,23 @@
 const fs = require("fs");
 const path = require("path");
 
+const args = process.argv.slice(2);
+
 // What folder are you slide decks located?
-const decksDir = process.env.DECKS_DIR || "decks";
+let decksDir = args[0] || process.env.DECKS_DIR || ".";
 
 // What is the naming convention for your slide decks?
 // e.g. default is for files to end in ".slides.md"
-const decksRegex = process.env.LOCALE || /\.slides\.md$/;
+let decksRegex;
+if (args[1]) {
+    decksRegex = new RegExp(args[1].replace(".", "\\.") + "$");
+} else {
+    decksRegex = new RegExp(process.env.DECKS_REGEX || "\\.slides\\.md$");
+}
 
 // What character set are you using to write your file names?
 // This is used to turn filenames into human friendly slide deck names
-const locale = process.env.LOCALE || "en";
+const locale = args[2] || process.env.LOCALE || "en";
 
 // When the server starts, create a reference to all available slide decks by:
 // 1. Looking inside of decksDir to find all slide "decks" matching your decksRegex pattern
