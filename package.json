@@ -8,6 +8,9 @@
     "build": "vite build src",
     "serve": "nodemon index.js"
   },
+  "bin": {
+    "slidee": "index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mklilley/slidee.git"

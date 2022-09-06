@@ -9,10 +9,11 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.set("view engine", "hbs");
+app.set("views", __dirname + '/views')
 
 app.use("/", homeRoute);
 app.use("/decks", decksRoute);
 
-app.use(express.static("public"));
+app.use(express.static( __dirname + "/public"));
 
 module.exports = app;
