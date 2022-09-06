@@ -2,6 +2,7 @@
 
 const open = require("open");
 
+console.log("Building list of slide decks...");
 const app = require("./app");
 
 const port = process.env.PORT || 3000;
