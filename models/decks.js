@@ -52,13 +52,14 @@ async function find(query) {
 
 function generateDecksData(decksDir, decksRegex) {
     const deckData = {};
-    const files = readdirRecursSync(`./${decksDir}`, decksRegex);
+    const files = readdirRecursSync(`${decksDir}/`, decksRegex);
 
     files.forEach((filePath) => {
         const filePathArray = filePath
-            .split(".slides.md")[0]
-            .split("/")
-            .slice(1);
+            .split(".")[0]
+            .split(decksDir + "/")
+            .pop()
+            .split("/");
 
         // Creates unique deckId based on filename and directory location
         const deckId = filePathArray.join("-");
