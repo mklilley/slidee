@@ -5,6 +5,9 @@ const args = process.argv.slice(2);
 
 // What folder are you slide decks located?
 let decksDir = args[0] || process.env.DECKS_DIR || ".";
+if (decksDir[decksDir.length - 1] === "/") {
+    decksDir = decksDir.substring(0, decksDir.length - 1);
+}
 
 // What is the naming convention for your slide decks?
 // e.g. default is for files to end in ".slides.md"
