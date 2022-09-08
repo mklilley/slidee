@@ -1,7 +1,7 @@
 {
   "name": "slidee",
-  "version": "0.1.0",
-  "description": "Presentation tool based on Reveal.js",
+  "version": "0.2.0",
+  "description": "Presentation tool powered by Reveal.js",
   "main": "index.js",
   "scripts": {
     "dev": "vite src",
