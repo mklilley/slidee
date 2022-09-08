@@ -21,6 +21,14 @@ Notes:
 - `---` is special. When you write `---` on it's own line, it indicates the end of one **horizontal** slide and the beginning of the next one.
 - `|||` is special. When you write `|||` on it's own line, it indicates the end of one **vertical** and the beginning of the next one.
 
+## Show me what's possible
+You can do lots of cool things with reveal.js. Take a look at an example:
+- [Presentation view](https://mklilley.github.io/slidee/examples/markdown/)
+- [Source code](https://github.com/mklilley/slidee/blob/main/examples/index.html)
+
+Note that with Slidee you won't have to write all the HTML boilerplate, you can just write the markdown and Sidee will take care of the rest.
+
+
 ## Writing slides with presenter notes
 Reveal.js has a built in presenter notes view - just hit `s` to show it.
 
@@ -51,6 +59,7 @@ Slide 2
 
 Slide 3
 ```
+
 
 ## Customising Slidee 
 
@@ -97,11 +106,3 @@ SLIDEE_PORT=3000
 Notes:
 - `SLIDEE_REGEX` allows you to specify a general regex pattern for your presentations instead of specifying just the file extension as with the command line argument.
 - Command line arguments override environment variables
-
-
-## Miscellaneous
-By default, reveal.js takes HTML and turns it into a web based presentation. To see an example:
-- Open `examples/html/index.html`
-
-Reveal.js can also take markdown and turn it into a web based presentation. To see an example:
-- Open `examples/markdown/index.html`
