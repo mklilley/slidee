@@ -23,7 +23,7 @@ Notes:
 
 ## Show me what's possible
 You can do lots of cool things with reveal.js. Take a look at an example:
-- [Presentation view](https://mklilley.github.io/slidee/examples/markdown/)
+- [Presentation view](https://mklilley.github.io/slidee/examples/)
 - [Source code](https://github.com/mklilley/slidee/blob/main/examples/index.html)
 
 Note that with Slidee you won't have to write all the HTML boilerplate, you can just write the markdown and Slidee will take care of the rest.
