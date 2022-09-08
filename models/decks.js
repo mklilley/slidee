@@ -13,7 +13,11 @@ if (decksDir[decksDir.length - 1] === "/") {
 // e.g. default is for files to end in ".slides.md"
 let decksRegex;
 if (args[1]) {
-    decksRegex = new RegExp(args[1].replace(".", "\\.") + "$");
+    if (args[1] === ".") {
+        decksRegex = new RegExp("\\.slides\\.md$");
+    } else {
+        decksRegex = new RegExp(args[1].replace(".", "\\.") + "$");
+    }
 } else {
     decksRegex = new RegExp(process.env.SLIDEE_REGEX || "\\.slides\\.md$");
 }
