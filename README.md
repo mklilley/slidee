@@ -17,7 +17,9 @@ WON'T CURRENTLY WORK ON WINDOWS, SORRY 😢.
     ```
 - Run `npx slidee` inside the folder containing your markdown file to start the Slidee presentation server (running on port 3000 i.e. http://localhost:3000)
 
-Note that three dashes `---` are special. When you write `---` on it's own line, it indicates the end of one slide and the beginning of the next one.
+Notes:
+- `---` is special. When you write `---` on it's own line, it indicates the end of one **horizontal** slide and the beginning of the next one.
+- `|||` is special. When you write `|||` on it's own line, it indicates the end of one **vertical** and the beginning of the next one.
 
 ## Writing slides with presenter notes
 Reveal.js has a built in presenter notes view - just hit `s` to show it.
