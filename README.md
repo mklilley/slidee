@@ -34,32 +34,34 @@ Reveal.js has a built in presenter notes view - just hit `s` to show it.
 
 Although Reveal.js allows you to customise which parts of your markdown should be interpreted as presenter notes, Slidee is more opinionated.
 
-In Slidee, notes should appear after the bullet point `- Notes:`. This allows you to visually separate your notes from slide content when you look at the rendered markdown on something like Github. For example:
+In Slidee, notes must appear after `### Notes:`. For example:
 
 ```md
 Slide 1
 
-- Notes:
-  A simple note for slide 1
+### Notes:
+A simple note for slide 1
 
 ---
 
 Slide 2 
 
-- Notes:
-  Some more structured notes
-  ## Point
-  The point of this slide 
-  ## Narrative
-  What I want to say on this slide 
-  ### Transition
-  How will I link to the next slide
+### Notes:
+Some more structured notes
+#### Point
+The point of this slide 
+#### Narrative
+What I want to say on this slide 
+#### Transition
+How will I link to the next slide
 
 ---
 
 Slide 3
 ```
 
+Notes:
+- `- Notes:` syntax was used for notes up to version 0.2.1. Slidee remains backwards compatible with this earlier syntax because it can be nice to use a bullet to nest your notes under. Nesting your notes under a `- Notes:` bullet can be a bit fiddly which is why we chose to provide the simpler option of `### Notes:`
 
 ## Customising Slidee 
 
