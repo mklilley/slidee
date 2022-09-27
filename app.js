@@ -1,4 +1,5 @@
 require("dotenv").config();
+const path = require("path");
 const express = require("express");
 const homeRoute = require("./routes/home");
 const decksRoute = require("./routes/decks");
@@ -9,11 +10,13 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.set("view engine", "hbs");
-app.set("views", __dirname + '/views')
+app.set("views", path.join(__dirname, 'views'))
+
+
 
 app.use("/", homeRoute);
 app.use("/decks", decksRoute);
 
-app.use(express.static( __dirname + "/public"));
+app.use(express.static(path.join(__dirname, 'public')));
 
 module.exports = app;

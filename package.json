@@ -9,7 +9,7 @@
     "serve": "nodemon index.js"
   },
   "bin": {
-    "slidee": "index.js"
+    "slidee": "node index.js"
   },
   "repository": {
     "type": "git",
