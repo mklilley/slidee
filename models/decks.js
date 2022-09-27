@@ -5,7 +5,7 @@ const args = process.argv.slice(2);
 
 // What folder are you slide decks located?
 let decksDir = args[0] || process.env.SLIDEE_FOLDER || ".";
-if (decksDir[decksDir.length - 1] === "/") {
+if (decksDir[decksDir.length - 1] === path.sep) {
     decksDir = decksDir.substring(0, decksDir.length - 1);
 }
 
@@ -56,14 +56,14 @@ async function find(query) {
 
 function generateDecksData(decksDir, decksRegex) {
     const deckData = {};
-    const files = readdirRecursSync(`${decksDir}/`, decksRegex);
+    const files = readdirRecursSync(`${decksDir}${path.sep}`, decksRegex);
 
     files.forEach((filePath) => {
         const filePathArray = filePath
             .split(".")[0]
-            .split(decksDir + "/")
+            .split(decksDir + path.sep)
             .pop()
-            .split("/");
+            .split(path.sep);
 
         // Creates unique deckId based on filename and directory location
         const deckId = filePathArray.join("-");
@@ -104,10 +104,10 @@ function readdirRecursSync(dir, regex, fileList) {
     try {
         fileList = fileList || [];
 
-        const files = fs.readdirSync(dir);
+        const files = fs.readdirSync(path.normalize(dir));
 
         files.forEach(function (file) {
-            const filePath = path.join(dir, file);
+            const filePath = path.join(path.normalize(dir), file);
 
             if (fs.statSync(filePath).isDirectory()) {
                 fileList = readdirRecursSync(filePath, regex, fileList);
