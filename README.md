@@ -93,7 +93,7 @@ You can run slidee with arguments. To use the defaults for any argument use the 
 
 - `folder` - which folder you want slidee to look for presentations in. Default is the folder you run `npx slidee` from.
 - `extension` - what extension do your presentations have? Default is `.slides.md`
-- `locale` - slidee uses filenames to create human readable presentation titles. Some languages have have special characters and rules for capitalisation. If you use a non western Latin character set for your filenames then consider specifying a language/locale code (examples avaiable at [ISO Language Code Table](http://www.lingoes.net/en/translator/langcode.htm)). Default is `en` (English)
+- `locale` - slidee uses filenames to create human readable presentation titles. Some languages have have special characters and rules for capitalisation. If you use a non western Latin character set for your filenames then consider specifying a language/locale code (examples available at [ISO Language Code Table](http://www.lingoes.net/en/translator/langcode.htm)). Default is `en` (English)
 
 For example: `npx slidee decks .md lt`. Slidee would look for files with extension `.md` in folder `decks` having an awareness of the `Lithuanian` language when generating presentation names.
 
