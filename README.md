@@ -3,8 +3,6 @@ Presentation tool powered by [Reveal.js](https://revealjs.com/)
 
 At its core, Slidee turns a folder of markdown files into Reveal.js presentations.
 
-WON'T CURRENTLY WORK ON WINDOWS, SORRY 😢.
-
 ## Getting started
 - Create a markdown file ending in `.slides.md`, e.g. `test.slides.md`
 - Write your content inside that file, e.g.
