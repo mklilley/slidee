@@ -3,7 +3,7 @@ const path = require("path");
 
 const args = process.argv.slice(2);
 
-// What folder are you slide decks located?
+// What folder are your slide decks located?
 let decksDir = args[0] || process.env.SLIDEE_FOLDER || ".";
 if (decksDir[decksDir.length - 1] === path.sep) {
     decksDir = decksDir.substring(0, decksDir.length - 1);
@@ -64,9 +64,13 @@ function generateDecksData(decksDir, decksRegex) {
             .split(decksDir + path.sep)
             .pop()
             .split(path.sep);
+            console.log(filePath)
 
         // Creates unique deckId based on filename and directory location
-        const deckId = filePathArray.join("-");
+        // Previous versions of slidee used "-" character for the join below but
+        // this prevented users from being able to reference local images from slide
+        // decks. Using path.sep allows local images to be used.
+        const deckId = filePathArray.join(path.sep);
         if (deckData[deckId]) {
             throw new Error(
                 `Two files have the same name after their extensions have been stripped. Please rename them. Look at files ${filePath} and ${deckData[deckId].path}`
