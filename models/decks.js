@@ -66,7 +66,7 @@ function generateDecksData(decksDir, decksRegex) {
             .split(path.sep);
 
         // Creates unique deckId based on filename and directory location
-        const deckId = filePathArray.join("-");
+        const deckId = filePathArray.join("/");
         if (deckData[deckId]) {
             throw new Error(
                 `Two files have the same name after their extensions have been stripped. Please rename them. Look at files ${filePath} and ${deckData[deckId].path}`

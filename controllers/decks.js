@@ -19,7 +19,7 @@ async function index(req, res) {
 
 async function show(req, res) {
     try {
-        const deck = await decks.find({ id: req.params.deckId });
+        const deck = await decks.find({ id: req.path.substr(1) });
         const content = fs.readFileSync(path.normalize(`${deck.path}`), "utf8");
         res.render("deck", { markdown: content, styles: customStyles });
     } catch (e) {
