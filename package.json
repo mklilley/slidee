@@ -1,6 +1,6 @@
 {
   "name": "slidee",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Presentation tool powered by Reveal.js",
   "main": "index.js",
   "scripts": {
