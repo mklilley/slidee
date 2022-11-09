@@ -64,9 +64,13 @@ function generateDecksData(decksDir, decksRegex) {
             .split(decksDir + path.sep)
             .pop()
             .split(path.sep);
+            console.log(filePath)
 
         // Creates unique deckId based on filename and directory location
-        const deckId = filePathArray.join("/");
+        // Previous versions of slidee used "-" character for the join below but
+        // this prevented users from being able to reference local images from slide
+        // decks. Using path.sep allows local images to be used.
+        const deckId = filePathArray.join(path.sep);
         if (deckData[deckId]) {
             throw new Error(
                 `Two files have the same name after their extensions have been stripped. Please rename them. Look at files ${filePath} and ${deckData[deckId].path}`

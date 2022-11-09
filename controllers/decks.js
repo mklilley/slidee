@@ -19,7 +19,8 @@ async function index(req, res) {
 
 async function show(req, res) {
     try {
-        const deck = await decks.find({ id: req.path.substr(1) });
+        const deckId = req.path.substr(1); // strips the leading "/" that appears at the start of the path
+        const deck = await decks.find({ id: deckId });
         const content = fs.readFileSync(path.normalize(`${deck.path}`), "utf8");
         res.render("deck", { markdown: content, styles: customStyles });
     } catch (e) {

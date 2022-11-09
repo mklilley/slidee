@@ -17,6 +17,7 @@ app.set("views", path.join(__dirname, 'views'))
 app.use("/", homeRoute);
 app.use("/decks", decksRoute);
 
+// This express.static middleware will catch requests for "assets" i.e. the reveal.js JS and CSS files.
 app.use(express.static(path.join(__dirname, 'public')));
 
 module.exports = app;
