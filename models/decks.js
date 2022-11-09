@@ -3,7 +3,7 @@ const path = require("path");
 
 const args = process.argv.slice(2);
 
-// What folder are you slide decks located?
+// What folder are your slide decks located?
 let decksDir = args[0] || process.env.SLIDEE_FOLDER || ".";
 if (decksDir[decksDir.length - 1] === path.sep) {
     decksDir = decksDir.substring(0, decksDir.length - 1);
