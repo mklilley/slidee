@@ -16,4 +16,4 @@ jobs:
           node-version: 16.15.1
       - run: npm ci
       - run: npm link
-      - run: npx slidee &
+      - run: npx slidee & sleep 5 && curl http://localhost:3000 -I
