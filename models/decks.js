@@ -64,7 +64,6 @@ function generateDecksData(decksDir, decksRegex) {
             .split(decksDir + path.sep)
             .pop()
             .split(path.sep);
-            console.log(filePath)
 
         // Creates unique deckId based on filename and directory location
         // Previous versions of slidee used "-" character for the join below but
