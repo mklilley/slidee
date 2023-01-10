@@ -1,5 +1,6 @@
 #! /usr/bin/env node
 
+require("dotenv").config();
 const open = require("open");
 
 console.log("Building list of slide decks...");
