@@ -24,7 +24,7 @@ You can do lots of cool things with reveal.js. Take a look at an example:
 - [Presentation view](https://mklilley.github.io/slidee/examples/)
 - [Source code](https://github.com/mklilley/slidee/blob/main/examples/index.html)
 
-Note that with Slidee you won't have to write all the HTML boilerplate, you can just write the markdown and Slidee will take care of the rest.
+Note that with Slidee you won't have to write all the HTML boilerplate that you see in [Source code](https://github.com/mklilley/slidee/blob/main/examples/index.html), you can just write the markdown and Slidee will take care of the rest.
 
 
 ## Writing slides with presenter notes
@@ -95,7 +95,7 @@ You can run slidee with arguments. To use the defaults for any argument use the 
 
 For example: `npx slidee decks .md lt`. Slidee would look for files with extension `.md` in folder `decks` having an awareness of the `Lithuanian` language when generating presentation names.
 
-Alternatively can also specify options using environment variables in a `.env` file, e.g. 
+Alternatively can also specify options using environment variables in a `.env` file (placed in the folder where you run `npx slidee` from), e.g. 
 ```
 SLIDEE_FOLDER=decks
 SLIDEE_REGEX=\.slides\.md$
